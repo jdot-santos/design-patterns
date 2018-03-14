@@ -6,12 +6,15 @@ import twitter4j.conf.ConfigurationBuilder;
 import java.util.List;
 
 /**
+ * Represents the RealSubject in the UML diagram.
+ *
  * This is copied from https://gist.github.com/bh5k/73a82d64e35e780150d1
  *
  * Created by jsantos on 10/18/17.
  */
 public class TwitterServiceImpl implements TwitterService {
 
+    //todo remove these values and invalidate the keys...
     private static final String TWITTER_CONSUMER_KEY = "KEKg7aXteZde0bH0utNJrdl6t";
     private static final String TWITTER_SECRET_KEY = "sNozBh7m8StPFsBIu8v1zdk2I3htqO9cJMTGcalogyuvrkk2Dy";
     private static final String TWITTER_ACCESS_TOKEN = "17720825-epiYZi1GeYx40NW61twUIc2lQCR9TkydbyX6CpTYc";
