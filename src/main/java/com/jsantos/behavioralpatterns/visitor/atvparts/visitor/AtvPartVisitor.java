@@ -1,5 +1,8 @@
 package com.jsantos.behavioralpatterns.visitor.atvparts.visitor;
 
+/**
+ * A Visitor
+ */
 public interface AtvPartVisitor {
 
     void visit(Fender fender);

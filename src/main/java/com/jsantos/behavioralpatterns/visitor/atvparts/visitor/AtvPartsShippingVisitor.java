@@ -2,6 +2,11 @@ package com.jsantos.behavioralpatterns.visitor.atvparts.visitor;
 
 import java.util.List;
 
+/**
+ * A ConcreteVisitor
+ *
+ * The main difference between this way of calculating shipping vs the non-visitor version is that all the calculation is done in this class rather than in the individual Elements.
+ */
 public class AtvPartsShippingVisitor implements AtvPartVisitor {
 
     double shippingAmount = 0;

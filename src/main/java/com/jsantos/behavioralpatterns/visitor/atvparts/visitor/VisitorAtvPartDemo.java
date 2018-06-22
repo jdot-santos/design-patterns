@@ -1,6 +1,6 @@
-package com.jsantos.behavioralpatterns.visitor.atvparts.nonvisitor;
+package com.jsantos.behavioralpatterns.visitor.atvparts.visitor;
 
-public class Demo {
+public class VisitorAtvPartDemo {
 
     public static void main(String[] args) {
         PartsOrder order = new PartsOrder();
@@ -8,6 +8,7 @@ public class Demo {
         order.addPart(new Fender());
         order.addPart(new Oil());
 
-        System.out.println(order.calculateShipping());
+        order.accept(new AtvPartsShippingVisitor());
+        order.accept(new AtvPartsDisplayVisitor());
     }
 }

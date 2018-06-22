@@ -1,5 +1,8 @@
 package com.jsantos.behavioralpatterns.visitor.atvparts.visitor;
 
+/**
+ * A ConcreteVisitor
+ */
 public class AtvPartsDisplayVisitor implements AtvPartVisitor {
     @Override
     public void visit(Fender fender) {
