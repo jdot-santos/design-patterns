@@ -1,9 +1,7 @@
 package com.jsantos.structuralpatterns.proxypattern.twitterproxy;
 
 /**
- * This class was created to avoid implementing the full Twitter impl for the time being. This will be replaced with TwitterServiceImpl.
- *
- * Created by jsantos on 10/18/17.
+ * Initially created to stub Twitter service calls, in order to move faster in initial implementation. You can see that TwitterServiceImpl has the actual implementation.
  */
 public class TwitterServiceStub implements TwitterService {
     public String getTimeline(String screenName) {

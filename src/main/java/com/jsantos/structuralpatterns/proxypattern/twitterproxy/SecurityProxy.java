@@ -10,6 +10,7 @@ import java.lang.reflect.Proxy;
  * Created by jsantos on 10/18/17.
  */
 public class SecurityProxy implements InvocationHandler {
+    // This is a factory pattern, see newInstance() for the rest of the impl
     private Object obj;
 
     private SecurityProxy(Object obj) {
@@ -57,7 +58,9 @@ public class SecurityProxy implements InvocationHandler {
      * @return
      */
     public static Object newInstance(Object obj) {
-        return Proxy.newProxyInstance(obj.getClass().getClassLoader(),
-                obj.getClass().getInterfaces(), new SecurityProxy(obj));
+        return java.lang.reflect.Proxy.newProxyInstance(
+                obj.getClass().getClassLoader(),
+                obj.getClass().getInterfaces(),
+                new SecurityProxy(obj));
     }
 }

@@ -8,7 +8,7 @@ public class TwitterDemo {
     public static void main(String[] args) {
         TwitterService service = (TwitterService) SecurityProxy.newInstance(new TwitterServiceImpl());
 
-        System.out.println(service.getTimeline("trump"));
+        System.out.println(service.getTimeline("davechappelle"));
 
         service.postToTimeline("trump", "some message that shouldn't go through");
     }

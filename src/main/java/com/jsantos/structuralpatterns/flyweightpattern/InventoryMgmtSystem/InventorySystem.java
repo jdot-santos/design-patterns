@@ -27,6 +27,6 @@ public class InventorySystem {
     }
 
     String report() {
-        return "\nTotal Item objets made: " + catalog.totalItemsMade();
+        return "\nTotal Item objects made: " + catalog.totalItemsMade();
     }
 }
