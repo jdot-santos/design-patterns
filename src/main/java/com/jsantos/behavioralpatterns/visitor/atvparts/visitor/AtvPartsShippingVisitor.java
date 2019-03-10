@@ -2,6 +2,11 @@ package com.jsantos.behavioralpatterns.visitor.atvparts.visitor;
 
 import java.util.List;
 
+/**
+ * Represents a ConcreteVisitor
+ *
+ * Notice that the algorithm and the logic are inside this class, as opposed to having it spread all over the Elements.
+ */
 public class AtvPartsShippingVisitor implements AtvPartVisitor {
 
     double shippingAmount = 0;
@@ -24,6 +29,14 @@ public class AtvPartsShippingVisitor implements AtvPartVisitor {
         System.out.println("Oil is hazardous and has a fee to ship.");
     }
 
+
+    /**
+     * You can add further logic to enhance this, such as:
+     *  - Add rebates to certain parts
+     *  - Reduce shipping
+     *  - Use coupon codes
+     * @param partsOrder
+     */
     @Override
     public void visit(PartsOrder partsOrder) {
         System.out.println("If they bought more than 3 things we'll give them a discount on shipping");

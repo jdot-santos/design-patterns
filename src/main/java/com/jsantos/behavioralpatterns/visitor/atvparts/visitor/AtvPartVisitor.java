@@ -1,5 +1,8 @@
 package com.jsantos.behavioralpatterns.visitor.atvparts.visitor;
 
+/**
+ * Represents a Visitor. All ConcreteVisitors are going to extend from this.
+ */
 public interface AtvPartVisitor {
 
     void visit(Fender fender);
