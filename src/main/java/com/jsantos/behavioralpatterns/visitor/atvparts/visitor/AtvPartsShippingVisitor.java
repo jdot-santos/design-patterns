@@ -3,9 +3,9 @@ package com.jsantos.behavioralpatterns.visitor.atvparts.visitor;
 import java.util.List;
 
 /**
- * A ConcreteVisitor
+ * Represents a ConcreteVisitor
  *
- * The main difference between this way of calculating shipping vs the non-visitor version is that all the calculation is done in this class rather than in the individual Elements.
+ * Notice that the algorithm and the logic are inside this class, as opposed to having it spread all over the Elements.
  */
 public class AtvPartsShippingVisitor implements AtvPartVisitor {
 
@@ -29,6 +29,14 @@ public class AtvPartsShippingVisitor implements AtvPartVisitor {
         System.out.println("Oil is hazardous and has a fee to ship.");
     }
 
+
+    /**
+     * You can add further logic to enhance this, such as:
+     *  - Add rebates to certain parts
+     *  - Reduce shipping
+     *  - Use coupon codes
+     * @param partsOrder
+     */
     @Override
     public void visit(PartsOrder partsOrder) {
         System.out.println("If they bought more than 3 things we'll give them a discount on shipping");

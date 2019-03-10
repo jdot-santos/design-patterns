@@ -6,8 +6,11 @@ package com.jsantos.behavioralpatterns.visitor.atvparts.nonvisitor;
  * See {@link AtvPart} for more details on the non-visitor pattern version
  *
  * To see the Visitor pattern implemented version of this. Please see /{@link com.jsantos.behavioralpatterns.visitor.atvparts.visitor.VisitorAtvPartDemo}
+ *
+ * This demo shows how you would create orders for TV parts.
  */
 public class NonVisitorAtvPartDemo {
+
 
     public static void main(String[] args) {
         PartsOrder order = new PartsOrder();

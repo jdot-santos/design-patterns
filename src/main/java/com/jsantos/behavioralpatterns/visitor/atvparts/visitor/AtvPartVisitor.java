@@ -1,7 +1,7 @@
 package com.jsantos.behavioralpatterns.visitor.atvparts.visitor;
 
 /**
- * A Visitor
+ * Represents a Visitor. All ConcreteVisitors are going to extend from this.
  */
 public interface AtvPartVisitor {
 

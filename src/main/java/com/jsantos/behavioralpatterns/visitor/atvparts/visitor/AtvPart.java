@@ -1,7 +1,7 @@
 package com.jsantos.behavioralpatterns.visitor.atvparts.visitor;
 
 /**
- * An Element
+ * Represents the Element interface
  */
 public interface AtvPart {
     /**
