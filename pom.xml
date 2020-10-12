@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <junit.version>3.8.1</junit.version>
+        <junit.version>4.13.1</junit.version>
         <twitter4j-core.version>4.0.6</twitter4j-core.version>
         <lombk.version>1.16.8</lombk.version>
         <derby.version>10.13.1.1</derby.version>
